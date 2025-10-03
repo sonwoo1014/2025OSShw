@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 550px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: white;
+      padding: 15px;
+      width: 100%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    .row-2{
+        background-color: lightgray;
+    }
+
+    .row-3 {
+        background-color: white;
+    }
+    .btn {
+        background-color: gray;
+        color:white;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">도서관리</a></li>
+      </ul>
+      <a href="add.html" class="btn btn-danger navbar-btn" style="background-color: #222; border-color: white;">추가</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <div class="row" style="font-size: 30px;">
+            <div class="col-sm-3">도서명</div>
+            <div class="col-sm-3">저자</div>
+            <div class="col-sm-3">출판사</div>
+            <div class="col-sm-3">가격</div>
+        </div>
+
+        <div class="row row-2" style="background-color: lightgray;">
+            <div class="col-sm-3"><a href="view.html">절창</a></div>
+            <div class="col-sm-3">구병모</div>
+            <div class="col-sm-3">문학동네</div>
+            <div class="col-sm-3">16,200원</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><a href="view.html">머니 트렌드 2026</a></div>
+            <div class="col-sm-3">김도윤</div>
+            <div class="col-sm-3">북모먼트</div>
+            <div class="col-sm-3">23,400원</div>
+        </div>
+
+        <div class="row row-2">
+            <div class="col-sm-3"><a href="view.html">월요일 수요일 토요일</a></div>
+            <div class="col-sm-3">페트라 펠리니</div>
+            <div class="col-sm-3">북파머스</div>
+            <div class="col-sm-3">17,550원</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><a href="view.html">불꽃한화</a></div>
+            <div class="col-sm-3">이상학</div>
+            <div class="col-sm-3">페이스메이커</div>
+            <div class="col-sm-3">19,800원</div>
+        </div>
+
+        <div class="row row-2">
+            <div class="col-sm-3"><a href="view.html">모순</a></div>
+            <div class="col-sm-3">양귀자</div>
+            <div class="col-sm-3">쓰다</div>
+            <div class="col-sm-3">11,700원</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><a href="view.html">어른의 품위</a></div>
+            <div class="col-sm-3">최서영</div>
+            <div class="col-sm-3">북로망스</div>
+            <div class="col-sm-3">17,550원</div>
+        </div>
+
+        <div class="row row-2">
+            <div class="col-sm-3"><a href="view.html">손자병법</a></div>
+            <div class="col-sm-3">손자</div>
+            <div class="col-sm-3">현대지성</div>
+            <div class="col-sm-3">11,700원</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><a href="view.html">소년이 온다</a></div>
+            <div class="col-sm-3">한강</div>
+            <div class="col-sm-3">창비</div>
+            <div class="col-sm-3">13,500원</div>
+        </div>
+
+        <div class="row row-2">
+            <div class="col-sm-3"><a href="view.html">안녕이라 그랬어</a></div>
+            <div class="col-sm-3">김애란</div>
+            <div class="col-sm-3">문학동네</div>
+            <div class="col-sm-3">15,120원</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><a href="view.html">편안함의 습격</a></div>
+            <div class="col-sm-3">마이클 이스터</div>
+            <div class="col-sm-3">수오서재</div>
+            <div class="col-sm-3">19,800원</div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+  <footer>
+  <div class="text-center">
+    <ul class="pagination">
+        <li><button class="btn"><<</button></li>
+        <li><button class="btn">1</button></li>
+        <li><button class="btn">2</button></li>
+        <li><button class="btn">3</button></li>
+        <li><button class="btn">>></button></li>
+    </ul>
+  </div>
+  </footer>
+</div>
+
+
+</body>
+</html>

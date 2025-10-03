@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>view</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>목록</h2>
+  <p></p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>도서명</th>
+        <th>저자</th>
+        <th>출판사</th>
+        <th>가격</th>
+        <th>출판년도</th>
+        <th>ISBN</th>
+        <th>메뉴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>절창</td>
+        <td>구병모</td>
+        <td>문학동네</td>
+        <td>16,200원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=절창&author=구병모&publisher=문학동네&price=16,200원" class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confrim('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>머니 트렌드 2026</td>
+        <td>김도윤</td>
+        <td>북모먼트</td>
+        <td>23,400원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=머니 트렌드 2026&author=김도윤&publisher=북모먼트&price=23,400원" class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>월요일 수요일 토요일</td>
+        <td>페트라 펠리니</td>
+        <td>북파머스</td>
+        <td>17,550원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=월요일 수요일 토요일&author=페트라 펠리니 &publisher=북파머스 &price=17,550원" class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>불꽃한화</td>
+        <td>이상학</td>
+        <td>페이스메이커</td>
+        <td>19,800원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>     
+                <a href="edit.html?title=불꽃한화&author=이상학&publisher=페이스메이커&price=19,800원" class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>모순</td>
+        <td>양귀자</td>
+        <td>쓰다</td>
+        <td>11,700원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=모순&author=양귀자&publisher=쓰다&price=11,700원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>어른의 품위</td>
+        <td>최서영</td>
+        <td>북로망스</td>
+        <td>17,550원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=어른의 품위&author=최서영&publisher=북로망스&price=17,550원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>손자병법</td>
+        <td>손자</td>
+        <td>현대지성</td>
+        <td>11,700원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=손자병법&author=손자&publisher=현대지성&price=11,700원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>소년이 온다</td>
+        <td>한강</td>
+        <td>창비</td>
+        <td>13,500원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=소년이 온다&author=한강&publisher=창비&price=13,500원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>안녕이라 그랬어</td>
+        <td>김애란</td>
+        <td>문학동네</td>
+        <td>15,120원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=안녕이라 그랬어&author=김애란&publisher=문학동네&price=15,120원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>편안함의 습격</td>
+        <td>마이클 이스터</td>
+        <td>수오서재</td>
+        <td>19,800원</td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="btn-group">
+                <a href="#" class="btn btn-info btn-xs">추가</a>
+                <a href="edit.html?title=편안함의 습격&author=마이클 이스터&publisher=수오서재&price=19,800원"  class="btn btn-info btn-xs">수정</a>
+                <a href="#" class="btn btn-info btn-xs" onclick="confirm('게시물을 삭제할까요?')">삭제</a>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+        <a href="index.html" class="btn btn-danger navbar-btn" style="background-color: #222; border-color: white;">목록</a>
+
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html>

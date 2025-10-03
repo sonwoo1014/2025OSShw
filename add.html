@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>add</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>추가 페이지</h2>
+  <form onsubmit=" return validate_form()">
+    <div class="form-group">
+      <label for="book_name">도서명</label>
+      <input type="text" class="form-control" id="book_name" placeholder="책 이름을 입력하세요" name="book_name">
+    </div>
+
+    <div class="form-group">
+      <label for="author">저자</label>
+      <input type="text" class="form-control" id="author" placeholder="저자를 입력하세요" name="author">
+    </div>
+
+    <div class="form-group">
+      <label for="publisher">출판사</label>
+      <input type="text" class="form-control" id="publisher" placeholder="출판사를 입력하세요" name="publisher">
+    </div>
+
+    <div class="form-group">
+      <label for="price">가격</label>
+      <input type="text" class="form-control" id="price" placeholder="가격을 입력하세요" name="price">
+    </div>
+    <button type="submit"  class="btn btn-default">추가</button>
+    <a href="index.html" button type="submit" class="btn btn-default">취소</a>
+  </form>
+</div>
+
+<script>    
+function validate_form(){
+    let book_name = document.getElementById ("book_name").value.trim();
+    let author = document.getElementById ("author").value.trim();
+    let publisher = document.getElementById ("publisher").value.trim();
+    let price = document.getElementById ("price").value.trim();
+
+    if (book_name === "") {
+        alert ("도서명을 입력하세요");
+        return false;
+    }
+
+     if (author === "") {
+        alert ("저자를 입력하세요");
+        return false;
+    }
+
+    if (publisher === "") {
+        alert ("출판사를 입력하세요");
+        return false;
+    }
+
+    if (price === "") {
+        alert ("가격을 입력하세요");
+        return false;
+    }
+
+    alert ("게시물이 추가됩니다");
+    return true;
+}
+</script>
+</body>
+</html>
