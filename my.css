@@ -1,0 +1,63 @@
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 550px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: white;
+      padding: 15px;
+      width: 100%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+
+      .table {
+        font-size: 10px;
+        width:100%;
+      }
+      
+    }
+    @media screen and (max-height: 300px) {
+        .container {
+            height: auto;
+        }
+    }
+
+    .row-2{
+        background-color: lightgray;
+    }
+
+    .row-3 {
+        background-color: white;
+    }
+    .btn-2{
+        background-color: gray;
+        color:white;
+        border-radius: 5px;
+        border-color: gray;
+    }
+
+    table th {
+        white-space: nowrap;
+    }
+
+    table td {
+        white-space: nowrap;
+    }
+
+    .btn-group {
+        white-space: nowrap;
+    }
