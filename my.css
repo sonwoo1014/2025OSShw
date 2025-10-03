@@ -33,6 +33,7 @@
     @media screen and (max-height: 300px) {
         .container {
             height: auto;
+            width: auto;
         }
     }
 
