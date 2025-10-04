@@ -22,7 +22,14 @@
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
+      .col-sm-8 {
+        font-size: 15px;
+      }
+      .row.content {
+        height:auto;
+        width: auto;
+    } 
+
 
       .table {
         font-size: 10px;
