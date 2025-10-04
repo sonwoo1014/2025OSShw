@@ -29,14 +29,31 @@
         height:auto;
         width: auto;
     } 
-
-
       .table {
         font-size: 10px;
         width:100%;
       }
-      
+      .table-responsive table,
+      .table-responsive thead,
+      .table-responsive tbody,
+      .table-responsive th,
+      .table-responsive td,
+      .table-responsive tr {
+        display: block;
+      }
+      .table-responsive tr{
+        border: 1px solid;
+        margin-bottom: 12px;
+      }
+      .table-responstive td {
+        border: none;
+        border-bottom: 1px solid;
+        position: relative;
+        padding-left: 45%;
+        height:30px;
+      }
     }
+
     @media screen and (max-height: 300px) {
         .container {
             height: auto;
