@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>학생 정보 CRUD (AJAX + JSON Server)</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    input, button { margin: 5px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h2>학생 정보 관리</h2>
+
+  <div>
+    <input id="name" placeholder="이름">
+    <input id="major" placeholder="전공">
+    <input id="score" placeholder="점수" type="number">
+    <input id="year" placeholder="학년" type="number">
+    <button onclick="addData()">추가</button>
+  </div>
+
+  <table id="table">
+    <thead>
+      <tr><th>ID</th><th>이름</th><th>전공</th><th>점수</th><th>학년</th><th>수정</th><th>삭제</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const API_URL = "http://localhost:3000/students";
+
+    // 데이터 불러오기
+    async function loadData() {
+      const res = await fetch(API_URL);
+      const data = await res.json();
+      const tbody = document.querySelector("#table tbody");
+      tbody.innerHTML = "";
+
+      data.forEach(stu => {
+        const row = `
+          <tr>
+            <td>${stu.id}</td>
+            <td><input value="${stu.name}" id="name-${stu.id}"></td>
+            <td><input value="${stu.major}" id="major-${stu.id}"></td>
+            <td><input value="${stu.score}" id="score-${stu.id}" type="number"></td>
+            <td><input value="${stu.year}" id="year-${stu.id}" type="number"></td>
+            <td><button onclick="updateData(${stu.id})">수정</button></td>
+            <td><button onclick="deleteData(${stu.id})">삭제</button></td>
+          </tr>`;
+        tbody.insertAdjacentHTML("beforeend", row);
+      });
+    }
+
+    // 데이터 추가
+    async function addData() {
+      const name = document.getElementById("name").value;
+      const major = document.getElementById("major").value;
+      const score = document.getElementById("score").value;
+      const year = document.getElementById("year").value;
+
+      await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, major, score: Number(score), year: Number(year) })
+      });
+      loadData();
+    }
+
+    // 데이터 수정 (UPDATE)
+    async function updateData(id) {
+      const name = document.getElementById(`name-${id}`).value;
+      const major = document.getElementById(`major-${id}`).value;
+      const score = document.getElementById(`score-${id}`).value;
+      const year = document.getElementById(`year-${id}`).value;
+
+      await fetch(`${API_URL}/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, major, score: Number(score), year: Number(year) })
+      });
+      loadData();
+    }
+
+    // 데이터 삭제
+    async function deleteData(id) {
+      await fetch(`${API_URL}/${id}`, { method: "DELETE" });
+      loadData();
+    }
+
+    //데이터 불러오기
+    loadData();
+  </script>
+</body>
+</html>
