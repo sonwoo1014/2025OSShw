@@ -53,17 +53,17 @@
       });
     }
 
-    // 데이터 추가
     async function addData() {
       const name = document.getElementById("name").value;
       const major = document.getElementById("major").value;
       const score = document.getElementById("score").value;
       const year = document.getElementById("year").value;
+      const id = Date.now();
 
       await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, major, score: Number(score), year: Number(year) })
+        body: JSON.stringify({ id, name, major, score: Number(score), year: Number(year) })
       });
       loadData();
     }
