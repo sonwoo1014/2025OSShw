@@ -22,11 +22,54 @@
       "year": 4
     },
     {
-      "id": "21ec",
-      "name": "",
-      "major": "",
-      "score": 0,
+      "id": "4",
+      "name": "Choi",
+      "major": "경영경제",
+      "score": 83,
       "year": 2
+    },
+    {
+      "id": "5",
+      "name": "Hong",
+      "major": "생명과학",
+      "score": 91,
+      "year": 2
+    },
+    {
+      "id": "6",
+      "name": "Baek",
+      "major": "경영경제",
+      "score": 82,
+      "year": 2
+    },
+    {
+      "id": "7",
+      "name": "Jeong",
+      "major": "커뮤니케이션",
+      "score": 78,
+      "year": 2
+    },
+    {
+      "id": "8",
+      "name": "Jo",
+      "major": "전산전자",
+      "score": 63,
+      "year": 2
+    },
+        {
+      "id": "9",
+      "name": "Kang",
+      "major": "건축",
+      "score": 81,
+      "year": 2
+    },
+    {
+      "id": "10",
+      "name": "Yoo",
+      "major": "사회복지",
+      "score": 93,
+      "year": 3
     }
+
   ]
 }
