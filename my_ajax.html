@@ -100,12 +100,19 @@
       const score = Number(document.getElementById(`score-${id}`).value);
       const year  = Number(document.getElementById(`year-${id}`).value);
 
-      await fetch(`${API_URL}/${id}`, {
-        method: "PATCH",
+      try {
+      const res = await fetch(`${API_URL}/${id}`, {
+        method: "PUT",             
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, major, score, year })
       });
-      loadData();
+      if (!res.ok) throw new Error("수정 실패: " + res.status);
+
+      await loadData();
+      } catch (err) {
+      console.error(err);
+      alert("오류 발생");
+    }
     }
 
     // 데이터 삭제
