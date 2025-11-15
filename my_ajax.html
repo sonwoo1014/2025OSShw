@@ -34,7 +34,7 @@
   </table>
 
   <script>
-    const API_URL = "http://localhost:3000/students";
+    const API_URL = "https://6915405584e8bd126af93985.mockapi.io/students";
 
     // 데이터 불러오기
     async function loadData() {
@@ -84,7 +84,7 @@
         body: JSON.stringify({ id, name, major, score, year })
       });
 
-      // 입력창 초기화
+      // 입력창 초기화  
       document.getElementById("name").value = "";
       document.getElementById("major").value = "";
       document.getElementById("score").value = "";
